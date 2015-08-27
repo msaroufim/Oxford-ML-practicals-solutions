@@ -54,6 +54,9 @@ Some useful operations include:
 
 ## Handin
 
+1. Selecting rows and columns, ```select(i,j)```. Pick the dimension then pick the entry. Don't forget to start counting from 1.
+
+* Selecting a row:
 ```
 a = torch.Tensor{{1,2,3},{4,5,6},{7,8,9}}
 > c = a:select(1,2)
@@ -63,6 +66,12 @@ a = torch.Tensor{{1,2,3},{4,5,6},{7,8,9}}
  6
 [torch.DoubleTensor of dimension 3]
 ```
-1. 
+
+* Selecting a column:
+```
+c = a:select(2,2)
+```
+
+2. Tensor is a way of viewing Storage
 
 
